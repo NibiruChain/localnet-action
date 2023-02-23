@@ -1,0 +1,19 @@
+name: Test ChaosNet
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Start ChaosNet
+        uses: docker/compose-action@v2
+        with:
+          compose-file: https://raw.githubusercontent.com/nibiruproject/nibiru/main/contrib/docker-compose/docker-compose-chaosnet.yml
+          project-name: chaosnet
+          run: pull
+
+      # Add the following step to keep the workflow running indefinitely
+      - name: Keep workflow running
+        run: sleep infinity
