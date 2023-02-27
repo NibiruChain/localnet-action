@@ -1,0 +1,6 @@
+name: "NibiruChain/run-chaosnet"
+description: "Runs a local Chaosnet"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  entrypoint: "entrypoint.sh"
