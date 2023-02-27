@@ -13,3 +13,9 @@ This includes:
 - price feeder
 
 This is build using the latest image of each service.
+
+You can run this using
+
+```bash
+    - uses: NibiruChain/run-chaosnet
+```
