@@ -7,4 +7,4 @@ curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/master/contrib/dock
 mkdir templates
 curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/master/contrib/templates/bdjuno.yaml >templates/bdjuno.yaml
 
-docker compose -f action/docker-compose-chaosnet.yml up $services
+docker-compose -f action/docker-compose-chaosnet.yml up $services
