@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM docker:latest
 
-RUN apt update && apt install -y docker.io curl docker-compose
+RUN apk update && apk add curl
 
 COPY entrypoint.sh /entrypoint.sh
 
