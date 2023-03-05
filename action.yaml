@@ -1,6 +1,15 @@
 name: "NibiruChain/run-chaosnet"
 description: "Runs a local Chaosnet"
+
+inputs:
+  services: # id of input
+    description: "Services to start"
+    required: false
+    default: nibiru oracle
+
 runs:
   using: "docker"
-  image: "Dockerfile"
-  entrypoint: "entrypoint.sh"
+  image: "action/Dockerfile"
+  entrypoint: "action/entrypoint.sh"
+  args:
+    - ${{ inputs.services }}
