@@ -8,7 +8,7 @@ jobs:
     name: Chaosnet test
     steps:
       - name: Run chaosnet
-        uses: NibiruChain/run-chaosnet
+        uses: ./
         id: chaosnet
         with:
           services: nibiru pricefeeder liquidator
