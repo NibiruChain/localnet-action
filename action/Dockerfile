@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
-RUN apt-get update &&
-    apt-get install -y docker.io
+RUN apt update &&
+    apt install -y docker.io
 
 COPY entrypoint.sh /entrypoint.sh
 
