@@ -6,6 +6,5 @@ COPY entrypoint.sh /entrypoint.sh
 COPY entrypoint.sh /entrypoint.sh
 
 RUN chmod +x entrypoint.sh
-RUN mkdir templates
 
 ENTRYPOINT ["/entrypoint.sh"]
