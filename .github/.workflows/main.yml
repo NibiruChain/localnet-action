@@ -1,0 +1,27 @@
+on: [push, pull_request]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Chaosnet test
+    steps:
+      - name: Run chaosnet
+        uses: NibiruChain/run-chaosnet
+        id: chaosnet
+        with:
+          services: nibiru pricefeeder liquidator
+
+      - name: Set up Python (3.8)
+        id: setup-python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8.16
+
+      - name: Run python
+        run: python --version && python -c "print('hello')"
+
+      - name: Run the examples
+        run: |
+          pip install nibiru
+
+          python3 -c "import nibiru; print(nibiru.Sdk.authorize().with_network(nibiru.Network.localnet(), True).query.perp.params())"
