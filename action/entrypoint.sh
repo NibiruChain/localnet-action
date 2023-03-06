@@ -6,10 +6,10 @@ echo "$1"
 echo "$2"
 echo "$3"
 
-echo "service $input_service"
+echo "service $input_services"
 echo "ghtoken $input_ghtoken"
 echo "ghuser $input_ghactor"
-echo "SERVICE $INPUT_SERVICE"
+echo "SERVICE $INPUT_SERVICES"
 echo "GHTOKEN $INPUT_GHTOKEN"
 echo "GHUSER $INPUT_GHACTOR"
 

@@ -16,7 +16,7 @@ jobs:
         with:
           services: nibiru pricefeeder liquidator
           ghtoken: ${{ secrets.GITHUB_TOKEN }}
-          ghuser: ${{ github.actor }}
+          ghuactor: ${{ github.actor }}
 
       - name: Set up Python (3.8)
         id: setup-python
