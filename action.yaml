@@ -13,3 +13,4 @@ runs:
   entrypoint: "action/entrypoint.sh"
   args:
     - ${{ inputs.services }}
+    - ${{ secrets.GITHUB_TOKEN }}
