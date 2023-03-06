@@ -5,6 +5,7 @@ set -e
 mkdir -p templates
 mkdir -p action
 mkdir -p /github/contrib/docker
+mkdir -p /contrib/scripts/
 
 curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/master/contrib/docker-compose/docker-compose-chaosnet.yml >action/docker-compose-chaosnet.yml
 curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/master/contrib/docker/chaosnet.Dockerfile >/github/contrib/docker/chaosnet.Dockerfile
