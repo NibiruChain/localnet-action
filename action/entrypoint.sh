@@ -6,9 +6,12 @@ echo "$1"
 echo "$2"
 echo "$3"
 
-echo "service $service"
-echo "ghtoken $ghtoken"
-echo "ghuser $ghuser"
+echo "service $input_service"
+echo "ghtoken $input_ghtoken"
+echo "ghuser $input_ghactor"
+echo "SERVICE $INPUT_SERVICE"
+echo "GHTOKEN $INPUT_GHTOKEN"
+echo "GHUSER $INPUT_GHACTOR"
 
 mkdir templates
 mkdir -p action
