@@ -2,6 +2,10 @@
 
 set -e
 
+echo "$1"
+echo "$2"
+echo "$3"
+
 echo "service $service"
 echo "ghtoken $ghtoken"
 echo "ghuser $ghuser"
