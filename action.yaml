@@ -6,6 +6,12 @@ inputs:
     description: "Services to start"
     required: false
     default: nibiru oracle
+  ghtoken: # id of input
+    description: "github secret to pull images"
+    required: true
+  ghactor: # id of
+    description: "github actor"
+    required: true
 
 runs:
   using: "docker"
@@ -13,3 +19,5 @@ runs:
   entrypoint: "action/entrypoint.sh"
   args:
     - ${{ inputs.services }}
+    - ${{ inputs.ghtoken }}
+    - ${{ inputs.ghactor }}

@@ -1,15 +1,22 @@
-on: [push, pull_request]
+name: Tests
+
+on: [push]
 
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     name: Chaosnet test
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Run chaosnet
-        uses: NibiruChain/run-chaosnet
+        uses: ./
         id: chaosnet
         with:
-          services: nibiru pricefeeder liquidator
+          services: nibiru pricefeeder
+          ghtoken: ${{ secrets.GITHUB_TOKEN }}
+          ghactor: ${{ github.actor }}
 
       - name: Set up Python (3.8)
         id: setup-python
