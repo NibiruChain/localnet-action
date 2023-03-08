@@ -14,7 +14,7 @@ jobs:
         uses: ./
         id: chaosnet
         with:
-          services: nibiru
+          services: nibiru pricefeeder
           ghtoken: ${{ secrets.GITHUB_TOKEN }}
           ghactor: ${{ github.actor }}
 
