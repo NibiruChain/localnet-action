@@ -1,4 +1,4 @@
-name: "NibiruChain/run-chaosnet"
+name: "Chaosnet"
 description: "Runs a local Chaosnet"
 
 inputs:
