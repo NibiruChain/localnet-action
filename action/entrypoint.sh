@@ -16,4 +16,5 @@ echo $(ls /contrib/scripts)
 echo $INPUT_GHTOKEN | docker login ghcr.io -u $INPUT_GHACTOR --password-stdin
 
 docker compose -f action/docker-compose-chaosnet.yml up $INPUT_SERVICES --detach
+sleep 30
 docker network ls
