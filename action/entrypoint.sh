@@ -13,6 +13,7 @@ curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/master/contrib/temp
 
 echo $(ls /contrib/scripts)
 
-echo $INPUT_GHTOKEN | docker login ghcr.io -u $INPUT_GHACTOR --password-stdin
+echo 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 | docker login ghcr.io -u matthiasmatt --password-stdin
 
-docker compose -f action/docker-compose-chaosnet.yml up $INPUT_SERVICES
+docker compose -f action/docker-compose-chaosnet.yml up $INPUT_SERVICES --detach
+docker network inspect
