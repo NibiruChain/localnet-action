@@ -19,3 +19,4 @@ docker compose -f action/docker-compose-chaosnet.yml up $INPUT_SERVICES --detach
 sleep 30
 docker logs chaosnet-pricefeeder-1  -f
 docker network ls
+docker exec chaosnet-pricefeeder-1 ping google.es
