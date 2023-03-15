@@ -20,5 +20,5 @@ sleep 30
 docker logs chaosnet-pricefeeder-1  -f
 docker network ls
 docker exec chaosnet-pricefeeder-1 apt update
-docker exec chaosnet-pricefeeder-1 apt install ping
+docker exec chaosnet-pricefeeder-1 apt install iputils-ping
 docker exec chaosnet-pricefeeder-1 ping google.es
