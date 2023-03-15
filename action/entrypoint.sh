@@ -7,7 +7,7 @@ mkdir -p action
 mkdir -p /github/contrib/docker
 mkdir -p /contrib/scripts/
 
-curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/master/contrib/docker-compose/docker-compose-chaosnet.yml >action/docker-compose-chaosnet.yml
+curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/feat/enforce-network-chaosnet/contrib/docker-compose/docker-compose-chaosnet.yml >action/docker-compose-chaosnet.yml
 curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/master/contrib/scripts/chaosnet.sh >/contrib/scripts/chaosnet.sh
 curl -s https://raw.githubusercontent.com/NibiruChain/nibiru/master/contrib/templates/bdjuno.yaml >templates/bdjuno.yaml
 
